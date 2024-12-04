@@ -48,9 +48,16 @@ a {
 .banner .division {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .banner .division .menu {
     display: flex;
     gap: 20px;
+}
+
+.banner .division .btn{
+    background-color: #15c5f7;
+    border-radius:20px 0;
+    padding: 10px 15px;
 }
