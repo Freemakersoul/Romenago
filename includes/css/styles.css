@@ -12,14 +12,17 @@ a {
 }
 
 .banner {
-    background-image: url('../../imgs/banner.png'); /*caminho*/
+    background-image: url('../../imgs/banner.png');
+    /*caminho*/
     background-position: center;
     background-size: cover;
-    height: 100vh; /*100% altura*/
+    height: 100vh;
+    /*100% altura*/
+    color: white;
 }
 
 .wrapper {
-    max-width: 1500;
+    max-width: 900px;
     /*min-width: 1000px;*/
     padding: 0 20px;
     margin: 0 auto;
@@ -27,8 +30,27 @@ a {
 
 .header {
     padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
 }
 
-.header .logo{
+.header .logo {
     height: 40px;
+}
+
+.header .session {
+    display: flex;
+    gap: 20px;
+}
+
+.banner .division {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .division .menu {
+    display: flex;
+    gap: 20px;
 }
