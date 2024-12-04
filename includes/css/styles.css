@@ -119,20 +119,21 @@ a {
     gap: 15px;
 }
 
-.main .feeds .feed {
+.main .feed {
     border-radius: 10px;
-    padding: 5px 130px;
+    padding: 2px 60px;
     background-color: aqua;
     align-items: flex start;
 }
 
-.banner .feed {
+.feed {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex start;
+    gap: 20px;
 }
 
-.feed .game_icon{
+.game_icon{
     height: 70px;
 }
 
