@@ -1,9 +1,28 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf');
+    font-weight: 900;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    font-family: 'Roboto';
 }
 
 a {
@@ -22,17 +41,22 @@ a {
 }
 
 .wrapper {
-    max-width: 900px;
+    max-width: 1400px;
     /*min-width: 1000px;*/
     padding: 0 20px;
     margin: 0 auto;
+    height: 100%;
+}
+
+.banner .wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
-
     align-items: center;
 }
 
@@ -56,8 +80,63 @@ a {
     gap: 20px;
 }
 
-.banner .division .btn{
+.banner .division .btn {
     background-color: #15c5f7;
-    border-radius:20px 0;
-    padding: 10px 15px;
+    border-radius: 20px 0;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.banner .main {
+    flex: 1;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main .info .btn1 {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.main .info .btn2 {
+    background-color: darkslateblue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info .buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.main .feeds .feed {
+    border-radius: 10px;
+    padding: 5px 130px;
+    background-color: aqua;
+    align-items: flex start;
+}
+
+.banner .feed {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.feed .game_icon{
+    height: 70px;
+}
+
+.footer {
+    height: 100%;
+    background-color: #02021a;
 }
