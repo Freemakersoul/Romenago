@@ -64,6 +64,17 @@ a {
     height: 40px;
 }
 
+.header .site_name{
+    display: flex;
+    margin-right: auto;
+}
+
+.site_name {
+    font-size: 150%;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
 .header .session {
     display: flex;
     gap: 20px;
@@ -119,22 +130,46 @@ a {
     gap: 15px;
 }
 
-.main .feed {
-    border-radius: 10px;
-    padding: 2px 60px;
-    background-color: aqua;
-    align-items: flex start;
+.text {
+    padding-bottom: 10px;
+}
+
+.wrapper .main .feeds {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .feed {
     display: flex;
-    justify-content: space-between;
-    align-items: flex start;
+    justify-content:space-around;
     gap: 20px;
+}
+
+.feeds .game_icon{
+    display: flex;
 }
 
 .game_icon{
     height: 70px;
+}
+ 
+.feeds .text_box{
+    display: flex;
+    flex:1;
+}
+
+.text_box {
+    display:flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 5px 0px;
+}
+
+.text {
+    margin: 0PX;
 }
 
 .footer {
